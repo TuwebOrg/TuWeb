@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
         document.querySelector('#image').src = 'img/logo-2.gif'
-    }, 2000)
+    }, 1600)
 
     btnLogo.addEventListener('click', () => {
         window.location.href = '#top'
