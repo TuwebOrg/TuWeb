@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        document.querySelector('#image').src = 'img/logo-2.webp'
-    }, 1500)
-
     const btnLogo = document.querySelector('.btnLogo')
     const btnLogo2 = document.querySelector('.btnLogo_2')
     const btnContact = document.querySelector('.contact')
@@ -51,9 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     // Transición borrosa
-    const img = document.getElementById('image')
+    const background = document.getElementById('top')
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 90) img.classList.add('blur')
-        else img.classList.remove('blur')
+        if (window.scrollY > 90) background.classList.add('blur')
+        else background.classList.remove('blur')
     })
 })

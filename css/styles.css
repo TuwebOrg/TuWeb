@@ -8,15 +8,67 @@ html {
     scroll-behavior: smooth;
 }
 
-img {
-    position: fixed;
-    z-index: -1;
-    top: 15px;
+#top {
     width: 100%;
-    transition: filter .3s ease-in-out;
 }
 .blur {
+    position: fixed;
     filter: blur(3px);    
+}
+
+img {
+    position: fixed;
+    width: 200px;
+}
+.img_container {
+    position: fixed;
+    overflow: hidden;
+    width: 180px;
+    height: 190px;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    outline: 2px dashed #78009a;
+    z-index: -10;
+}
+.img_1 {
+    top: 100px;
+    left: 25px;
+    transform: rotate(-5deg);
+    outline: 2px dashed #78009a;
+}
+.img_1 img {
+    transform: rotate(5deg);
+    top: -6px;
+    left: -14px;
+}
+.img_2 {
+    transform: rotate(5deg);
+    top: 260px;
+    right: 25px;
+}
+.img_2 img {
+    transform: rotate(-5deg);
+    top: -20px;
+    left: -4px;
+}
+
+.texto_1 {
+    position: fixed;
+    color: #18001d;
+    top: 100px;
+    right: 28px;
+    letter-spacing: -2px;
+}
+.texto_2 {
+    position: fixed;
+    color: #18001d;
+    top: 310px;
+    left: 42px;
+    letter-spacing: -2px;
+}
+h2 small {
+    font-size: 30px;
+    color: #78009a;
 }
 
 .navbar div button {
@@ -72,11 +124,11 @@ img {
     padding: 10px 18px;
     font-size: 20px;
     border: none;
-    outline: none;
+    outline: 2px solid #fff;
     border-radius: 10px;
     color: #ddd;
-    top: 275px;
-    left: 50%;
+    top: 380px;
+    left: 100px;
     transform: translate(-50%);
     transition: all .1s ease;
 }
@@ -89,7 +141,7 @@ img {
 #section {
     position: relative;
     width: 100%;
-    margin-top: 330px;
+    margin-top: 450px;
     border-top: 2px solid #78009a;
     background-color: #eee;
 }
