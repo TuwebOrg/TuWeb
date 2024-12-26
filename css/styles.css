@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    position: fixed;
+    z-index: -1;
+    top: 15px;
+    width: 100%;
+}
+.navbar div button {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(red, green, blue, .9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px #555;
+    border-bottom: 1px solid #78009a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 2;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+.letters {
+    font-weight: 900;
+}
+.white {
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+.black {
+    color: #18001d;
+}
+
+.know_us {   
+    background-color: transparent; 
+    padding: 4px 15px;
+    font-size: 20px;
+    border: none;
+    outline: 1px solid #78009a;
+    border-radius: 10px;
+    color: #78009a;
+    transition: all .1s ease;
+}
+.temp_style_know_us {
+    outline: none;   
+}
+
+.contact {
+    position: relative;
+    background: linear-gradient(to right, #78009a, #a500d3);
+    padding: 10px 18px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #ddd;
+    top: 275px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all .1s ease;
+}
+.temp_style_contact {
+    background: #fff;
+    color: #78009a;
+    outline: 1px solid #78009a;
+}
+
+#section {
+    position: relative;
+    width: 100%;
+    margin-top: 330px;
+    border-top: 2px solid #78009a;
+    background-color: #eee;
+}
+#section::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: -5px;
+    border-top: 2px dashed #78009a;
+    z-index: -1;
+}
+
+.presentation {
+    margin: 0 10px;
+    padding: 30px 20px 20px;
+    border-bottom: 1px solid #a500d3;
+    font-size: 20px;
+    text-align: center;
+}
+
+.info_list {
+    list-style: none;
+    padding: 20px 40px;
+}
+.info_list li {
+    position: relative; 
+    padding: 20px 0px 20px 80px;
+}
+.info_list li::after {
+    content: '';
+    position: absolute;
+    height: 90%;
+    top: 50%;
+    left: 65px;
+    right: -10px;
+    border-left: 3px solid #78009a;
+    transform: translateY(-50%);
+    background-color: rgba(234, 174, 249, 0.1);
+    border-radius: 10px;
+}
+.info_list li h3 {
+    font-size: 18px;
+    padding-bottom: 6px;
+}
+
+.info_list li:first-child::before {
+    content: url('../img/icons/bolt.svg');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+.info_list li:nth-child(2)::before {
+    content: url('../img/icons/heart.svg');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+.info_list li:nth-child(3)::before {
+    content: url('../img/icons/graph.svg');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+
+#footer {
+    position: relative;
+    width: 100%;
+    background-color: #18001d;
+}
+#footer h4 {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #78009a;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.contact_us {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 15px;
+    width: 80%;
+}
+.num_container {
+    padding: 4px;
+    margin: 4px auto 0;
+}
+.contact_us h3 {
+    margin: 0 auto 10px;
+    padding: 30px 30px 8px;
+    text-align: center;
+    font-size: 22px;
+    width: 210px;
+    color: #ddd;
+    border-bottom: 1px solid #78009a;
+    border-radius: 10px;
+}
+.contact_us p {
+    display: inline;
+    padding-left: 6px;
+    vertical-align: middle;
+}
+.contact_us p a {   
+    color: #ddd; 
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+}
+.contact_us button {
+    display: inline;
+    padding: 3px;
+    width: 40px;
+    height: 40px;
+    background-color: #3f004c;
+    border: none;
+    border-bottom: 4px solid #31003b;
+    border-radius: 10px;
+    vertical-align: middle;
+}
