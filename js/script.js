@@ -1,20 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        document.querySelector('#image').src = 'img/logo-2.gif'
+        document.querySelector('#image').src = 'img/logo-2.webp'
     }, 1500)
 
     const btnLogo = document.querySelector('.btnLogo')
     const btnLogo2 = document.querySelector('.btnLogo_2')
-
     const btnContact = document.querySelector('.contact')
     const btnKnowus = document.querySelector('.know_us')
-
     const callErnesto = document.getElementById('call_ernesto')
     const callDiego = document.getElementById('call_diego')
     const wppErnesto = document.getElementById('wpp_ernesto')
     const wppDiego = document.getElementById('wpp_diego')    
 
-    //Boton de inicio
+    // Boton de inicio
     btnLogo.addEventListener('click', () => {
         window.location.href = '#top'
     })
@@ -22,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = '#top'
     })
 
-    //Botones para moverse x la página
+    // Botones para moverse x la página
     btnContact.addEventListener('click', () => {
         window.location.href = '#footer'
         btnContact.classList.add('temp_style_contact')
@@ -38,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 800)
     })
 
-    //Botones de contacto
+    // Botones de contacto
     callErnesto.addEventListener('click', () => {
         window.location.href = 'tel:+5352427622'
     })
@@ -50,5 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     wppDiego.addEventListener('click', () => {
         window.location.href = 'https://wa.me/+5356938821?text=Hola!'
+    })
+
+    // Transición borrosa
+    const img = document.getElementById('image')
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 90) img.classList.add('blur')
+        else img.classList.remove('blur')
     })
 })

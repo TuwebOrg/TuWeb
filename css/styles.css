@@ -13,7 +13,12 @@ img {
     z-index: -1;
     top: 15px;
     width: 100%;
+    transition: filter .3s ease-in-out;
 }
+.blur {
+    filter: blur(3px);    
+}
+
 .navbar div button {
     border: none;
     background-color: transparent;
@@ -22,7 +27,7 @@ img {
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: rgba(red, green, blue, .9);
+    background-color: rgba(255, 255, 255, .8);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 10px #555;
     border-bottom: 1px solid #78009a;
@@ -44,7 +49,7 @@ img {
     text-shadow: 0 0 4px #000;
 }
 .black {
-    color: #18001d;
+    color: #5d006f;
 }
 
 .know_us {   
