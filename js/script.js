@@ -1,17 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.querySelector('#image').src = 'img/logo-2.gif'
+    }, 1500)
+
     const btnLogo = document.querySelector('.btnLogo')
     const btnLogo2 = document.querySelector('.btnLogo_2')
+
     const btnContact = document.querySelector('.contact')
     const btnKnowus = document.querySelector('.know_us')
 
     const callErnesto = document.getElementById('call_ernesto')
     const callDiego = document.getElementById('call_diego')
     const wppErnesto = document.getElementById('wpp_ernesto')
-    const wppDiego = document.getElementById('wpp_diego')
-
-    setTimeout(() => {
-        document.querySelector('#image').src = 'img/logo-2.gif'
-    }, 1600)
+    const wppDiego = document.getElementById('wpp_diego')    
 
     btnLogo.addEventListener('click', () => {
         window.location.href = '#top'
