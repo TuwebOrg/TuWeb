@@ -14,12 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const wppErnesto = document.getElementById('wpp_ernesto')
     const wppDiego = document.getElementById('wpp_diego')    
 
+    //Boton de inicio
     btnLogo.addEventListener('click', () => {
         window.location.href = '#top'
     })
     btnLogo2.addEventListener('click', () => {
         window.location.href = '#top'
     })
+
+    //Botones para moverse x la página
     btnContact.addEventListener('click', () => {
         window.location.href = '#footer'
         btnContact.classList.add('temp_style_contact')
@@ -35,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 800)
     })
 
+    //Botones de contacto
     callErnesto.addEventListener('click', () => {
         window.location.href = 'tel:+5352427622'
     })
