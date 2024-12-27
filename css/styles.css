@@ -1,14 +1,23 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 html {
     scroll-behavior: smooth;
 }
+body {
+    background: linear-gradient(#eee, #ccc);
+}
 
-#top {
+#port {
     width: 100%;
 }
 .blur {
@@ -26,20 +35,19 @@ img {
     width: 180px;
     height: 190px;
     border-radius: 20px;
-    border: 3px solid #fff;
-    outline: 2px dashed #78009a;
+    border: 3px solid #ddd;
+    outline: 2px solid #78009a;
     z-index: -10;
 }
 .img_1 {
     top: 100px;
     left: 25px;
     transform: rotate(-5deg);
-    outline: 2px dashed #78009a;
 }
 .img_1 img {
     transform: rotate(5deg);
-    top: -6px;
-    left: -14px;
+    top: -60px;
+    left: -20px;
 }
 .img_2 {
     transform: rotate(5deg);
@@ -48,22 +56,22 @@ img {
 }
 .img_2 img {
     transform: rotate(-5deg);
-    top: -20px;
-    left: -4px;
+    top: -60px;
+    left: -6px;
 }
 
 .texto_1 {
     position: fixed;
     color: #18001d;
     top: 100px;
-    right: 28px;
+    right: 8%;
     letter-spacing: -2px;
 }
 .texto_2 {
     position: fixed;
     color: #18001d;
     top: 310px;
-    left: 42px;
+    left: 12%;
     letter-spacing: -2px;
 }
 h2 small {
@@ -79,7 +87,7 @@ h2 small {
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(240, 240, 240, .8);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 10px #555;
     border-bottom: 1px solid #78009a;
@@ -92,6 +100,9 @@ h2 small {
 .logo {
     display: flex;
     flex-direction: row;
+}
+.logo button h2 {
+    font-family: sans-serif;
 }
 .letters {
     font-weight: 900;
@@ -124,11 +135,11 @@ h2 small {
     padding: 10px 18px;
     font-size: 20px;
     border: none;
-    outline: 2px solid #fff;
+    outline: 2px solid #eee;
     border-radius: 10px;
-    color: #ddd;
+    color: #eee;
     top: 380px;
-    left: 100px;
+    left: 30%;
     transform: translate(-50%);
     transition: all .1s ease;
 }
@@ -142,8 +153,8 @@ h2 small {
     position: relative;
     width: 100%;
     margin-top: 450px;
-    border-top: 2px solid #78009a;
-    background-color: #eee;
+    /*border-top: 2px solid #78009a;*/
+    background-color: #ddd;
 }
 #section::before {
     content: '';
@@ -151,14 +162,14 @@ h2 small {
     height: 5px;
     width: 100%;
     top: -5px;
-    border-top: 2px dashed #78009a;
+    /*border-top: 2px solid #78009a;*/
     z-index: -1;
 }
 
 .presentation {
     margin: 0 10px;
     padding: 30px 20px 20px;
-    border-bottom: 1px solid #a500d3;
+    border-bottom: 1px solid #bbb;
     font-size: 20px;
     text-align: center;
 }
