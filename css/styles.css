@@ -153,7 +153,6 @@ h2 small {
     position: relative;
     width: 100%;
     margin-top: 450px;
-    /*border-top: 2px solid #78009a;*/
     background-color: #ddd;
 }
 #section::before {
@@ -162,7 +161,6 @@ h2 small {
     height: 5px;
     width: 100%;
     top: -5px;
-    /*border-top: 2px solid #78009a;*/
     z-index: -1;
 }
 
