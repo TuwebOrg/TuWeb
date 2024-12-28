@@ -45,9 +45,8 @@ img {
     transform: rotate(-5deg);
 }
 .img_1 img {
-    transform: rotate(5deg);
-    top: -60px;
-    left: -20px;
+    top: -24px;
+    left: -24px;
 }
 .img_2 {
     transform: rotate(5deg);
@@ -56,15 +55,15 @@ img {
 }
 .img_2 img {
     transform: rotate(-5deg);
-    top: -60px;
-    left: -6px;
+    top: -20px;
+    left: -10px;
 }
 
 .texto_1 {
     position: fixed;
     color: #18001d;
     top: 100px;
-    right: 8%;
+    right: 10%;
     letter-spacing: -2px;
 }
 .texto_2 {
@@ -249,7 +248,7 @@ h2 small {
 }
 .num_container {
     padding: 4px;
-    margin: 4px auto 0;
+    margin: 4px auto 0 60.15px;
 }
 .contact_us h3 {
     margin: 0 auto 10px;
@@ -282,4 +281,11 @@ h2 small {
     border-bottom: 4px solid #31003b;
     border-radius: 10px;
     vertical-align: middle;
+}
+.contact_us button img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
 }

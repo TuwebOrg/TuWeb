@@ -1,0 +1,42 @@
+@media screen and (min-width: 440px) {    
+    .img_1 {
+        top: 100px;
+        left: 14%;
+        transform: rotate(-5deg);
+    }
+    .img_2 {
+        transform: rotate(5deg);
+        top: 260px;
+        right: 14%;
+    }
+    
+    .texto_1 {
+        position: fixed;
+        color: #18001d;
+        top: 100px;
+        right: 13%;
+        letter-spacing: 0;
+    }
+    .texto_2 {
+        position: fixed;
+        color: #18001d;
+        top: 310px;
+        left: 13%;
+        letter-spacing: 0;
+    }
+
+    .contact {
+        position: relative;
+        background: linear-gradient(to right, #78009a, #a500d3);
+        padding: 10px 18px;
+        font-size: 26px;
+        border: none;
+        outline: 2px solid #eee;
+        border-radius: 10px;
+        color: #eee;
+        top: 380px;
+        left: 30%;
+        transform: translate(-50%);
+        transition: all .1s ease;
+    }
+}
