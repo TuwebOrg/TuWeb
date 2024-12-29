@@ -1,3 +1,3 @@
 # **TuWeb main site**
 
-_By DiegoValero_ @DiegoVaRu
+_By DiegoValero_ - @DiegoVaRu
